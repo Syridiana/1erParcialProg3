@@ -224,6 +224,7 @@ switch ($explode_path[1]) {
 
                 $listaAutos = Auto::leerJson();
 
+                echo "Lista de Autos <br>";
                 
                 var_dump($listaAutos);
 
@@ -235,6 +236,7 @@ switch ($explode_path[1]) {
                     {
                         if($unAuto->_patente == $patente)
                         {
+                            echo "Auto Buscado<br>";
                             echo $unAuto;
                         }
                     }
