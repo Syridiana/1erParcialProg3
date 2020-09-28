@@ -1,0 +1,1 @@
+a:1:{i:0;O:10:"Asignacion":3:{s:15:"_legajoProfesor";s:1:"1";s:6:"_turno";s:5:"tarde";s:10:"_idMateria";s:1:"1";}}
