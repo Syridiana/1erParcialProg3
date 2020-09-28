@@ -185,10 +185,33 @@ switch ($explode_path[1]) {
                     echo "Error. Debe estar logueado para acceder a esta pagina";
                 }
             } else {
-                echo "Debe cargar todos los datos para continuar.";
+                $listadoAutos = Auto::leerJson();
+
+                foreach($listaAutos as $auto)
+                {
+                    if($auto->_tipo == 'hora')
+                    {
+                        echo $auto;
+                    }
+                }
+
+                foreach($listaAutos as $auto)
+                {
+                    if($auto->_tipo == 'estadia')
+                    {
+                        echo $auto;
+                    }
+                }
+
+                foreach($listaAutos as $auto)
+                {
+                    if($auto->_tipo == 'mensual')
+                    {
+                        echo $auto;
+                    }
+                }
             }
 
-            #endregion
 
 
 
